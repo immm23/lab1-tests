@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Customer API Demo</title>
+</head>
+<body>
+    <h1>Customer API Demo</h1>
+
+    <h2>Get All Customers</h2>
+    <button onclick="getCustomers()">Get Customers</button>
+    <div id="customers"></div>
+
+    <h2>Get Customer by ID</h2>
+    <label for="customerId">Customer ID:</label>
+    <input type="text" id="customerId">
+    <button onclick="getCustomer()">Get Customer</button>
+    <div id="customer"></div>
+
+    <h2>Create Customer</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name">
+    <label for="surname">Surname:</label>
+    <input type="text" id="surname">
+    <label for="address">Address:</label>
+    <input type="text" id="address">
+    <button onclick="createCustomer()">Create Customer</button>
+
+    <h2>Update Customer</h2>
+    <label for="customerIdToUpdate">Customer ID:</label>
+    <input type="text" id="customerIdToUpdate">
+    <label for="nameToUpdate">Name:</label>
+    <input type="text" id="nameToUpdate">
+    <label for="surnameToUpdate">Surname:</label>
+    <input type="text" id="surnameToUpdate">
+    <label for="addressToUpdate">Address:</label>
+    <input type="text" id="addressToUpdate">
+    <button onclick="updateCustomer()">Update Customer</button>
+
+    <h2>Delete Customer</h2>
+    <label for="customerIdToDelete">Customer ID:</label>
+    <input type="text" id="customerIdToDelete">
+    <button onclick="deleteCustomer()">Delete Customer</button>
+
+    <h2>Move Balance</h2>
+    <label for="customerIdToMove">Customer ID:</label>
+    <input type="text" id="customerIdToMove">
+    <label for="amount">Amount:</label>
+    <input type="text" id="amount">
+    <button onclick="moveBalance()">Move Balance</button>
+</body>
+<script src="script.js"></script>
+</html>
